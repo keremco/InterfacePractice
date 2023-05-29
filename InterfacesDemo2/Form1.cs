@@ -36,21 +36,25 @@ namespace InterfacesDemo2
 
         private void btnKoseliHesapla_Click(object sender, EventArgs e)
         {
-            if(ddlSekil.SelectedIndex == 0)
+            
+            if (ddlSekil.SelectedIndex == 0)
             {
-                _koseliHesapService = new DikdortgenHesapService();
-
-                string taban = tbTaban.Text.Trim().Replace(",", ".");
-                string yukseklik = tbYukseklik.Text.Trim().Replace(",", ".");
-
-                double alan = _koseliHesapService.AlanHesapla(Convert.ToDouble(taban, _kultur), Convert.ToDouble(yukseklik, _kultur));
-                double cevre = _koseliHesapService.CevreHesapla(Convert.ToDouble(taban, _kultur), Convert.ToDouble(yukseklik, _kultur));
+                _koseliHesapService = new DikdortgenHesapService();             
 
             }
             else if (ddlSekil.SelectedIndex == 1)
             {
-
+                _koseliHesapService = new DikucgenHesapService();
             }
+
+            string taban = tbTaban.Text.Trim().Replace(",", ".");
+            string yukseklik = tbYukseklik.Text.Trim().Replace(",", ".");
+
+
+            double alan = _koseliHesapService.AlanHesapla(Convert.ToDouble(taban, _kultur), Convert.ToDouble(yukseklik, _kultur));
+            double cevre = _koseliHesapService.CevreHesapla(Convert.ToDouble(taban, _kultur), Convert.ToDouble(yukseklik, _kultur));
+
+            lSonuc.Text = $"Alan: {alan} \r\n Çevre: {cevre}";
         }
 
         private void Form1_Load(object sender, EventArgs e)
