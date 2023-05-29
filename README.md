@@ -1,3 +1,3 @@
 # InterfacePractice
 
-Interfaces practice with WindowsForm of BilgeAdam .NET Course
+Interfaces practice with WindowsForm and Console of BilgeAdam .NET Course
