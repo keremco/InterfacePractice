@@ -28,141 +28,140 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.tbTaban = new System.Windows.Forms.TextBox();
-            this.tbYukseklik = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.bKosesizHesapla = new System.Windows.Forms.Button();
-            this.btnKoseliHesapla = new System.Windows.Forms.Button();
-            this.lSonuc = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            groupBox1 = new GroupBox();
+            btnKoseliHesapla = new Button();
+            tbYukseklik = new TextBox();
+            tbTaban = new TextBox();
+            groupBox2 = new GroupBox();
+            bKosesizHesapla = new Button();
+            tbYaricap = new TextBox();
+            label3 = new Label();
+            lSonuc = new Label();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(22, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Taban";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            label1.AutoSize = true;
+            label1.Location = new Point(22, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Taban";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Yükseklik";
+            label2.AutoSize = true;
+            label2.Location = new Point(22, 61);
+            label2.Name = "label2";
+            label2.Size = new Size(56, 15);
+            label2.TabIndex = 0;
+            label2.Text = "Yükseklik";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnKoseliHesapla);
-            this.groupBox1.Controls.Add(this.tbYukseklik);
-            this.groupBox1.Controls.Add(this.tbTaban);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(196, 140);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Köşeli";
-            // 
-            // tbTaban
-            // 
-            this.tbTaban.Location = new System.Drawing.Point(85, 25);
-            this.tbTaban.Name = "tbTaban";
-            this.tbTaban.Size = new System.Drawing.Size(100, 23);
-            this.tbTaban.TabIndex = 1;
-            // 
-            // tbYukseklik
-            // 
-            this.tbYukseklik.Location = new System.Drawing.Point(84, 58);
-            this.tbYukseklik.Name = "tbYukseklik";
-            this.tbYukseklik.Size = new System.Drawing.Size(100, 23);
-            this.tbYukseklik.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.bKosesizHesapla);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Location = new System.Drawing.Point(214, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(196, 140);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Köşesiz";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(85, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 28);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Yarı Çap";
-            // 
-            // bKosesizHesapla
-            // 
-            this.bKosesizHesapla.Location = new System.Drawing.Point(110, 109);
-            this.bKosesizHesapla.Name = "bKosesizHesapla";
-            this.bKosesizHesapla.Size = new System.Drawing.Size(75, 23);
-            this.bKosesizHesapla.TabIndex = 3;
-            this.bKosesizHesapla.Text = "Hesapla";
-            this.bKosesizHesapla.UseVisualStyleBackColor = true;
-            this.bKosesizHesapla.Click += new System.EventHandler(this.bKosesizHesapla_Click);
+            groupBox1.Controls.Add(btnKoseliHesapla);
+            groupBox1.Controls.Add(tbYukseklik);
+            groupBox1.Controls.Add(tbTaban);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Location = new Point(12, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(196, 140);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Köşeli";
             // 
             // btnKoseliHesapla
             // 
-            this.btnKoseliHesapla.Location = new System.Drawing.Point(109, 109);
-            this.btnKoseliHesapla.Name = "btnKoseliHesapla";
-            this.btnKoseliHesapla.Size = new System.Drawing.Size(75, 23);
-            this.btnKoseliHesapla.TabIndex = 3;
-            this.btnKoseliHesapla.Text = "Hesapla";
-            this.btnKoseliHesapla.UseVisualStyleBackColor = true;
+            btnKoseliHesapla.Location = new Point(109, 109);
+            btnKoseliHesapla.Name = "btnKoseliHesapla";
+            btnKoseliHesapla.Size = new Size(75, 23);
+            btnKoseliHesapla.TabIndex = 3;
+            btnKoseliHesapla.Text = "Hesapla";
+            btnKoseliHesapla.UseVisualStyleBackColor = true;
+            // 
+            // tbYukseklik
+            // 
+            tbYukseklik.Location = new Point(84, 58);
+            tbYukseklik.Name = "tbYukseklik";
+            tbYukseklik.Size = new Size(100, 23);
+            tbYukseklik.TabIndex = 1;
+            // 
+            // tbTaban
+            // 
+            tbTaban.Location = new Point(85, 25);
+            tbTaban.Name = "tbTaban";
+            tbTaban.Size = new Size(100, 23);
+            tbTaban.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(bKosesizHesapla);
+            groupBox2.Controls.Add(tbYaricap);
+            groupBox2.Controls.Add(label3);
+            groupBox2.Location = new Point(214, 12);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(196, 140);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Köşesiz";
+            // 
+            // bKosesizHesapla
+            // 
+            bKosesizHesapla.Location = new Point(110, 109);
+            bKosesizHesapla.Name = "bKosesizHesapla";
+            bKosesizHesapla.Size = new Size(75, 23);
+            bKosesizHesapla.TabIndex = 3;
+            bKosesizHesapla.Text = "Hesapla";
+            bKosesizHesapla.UseVisualStyleBackColor = true;
+            bKosesizHesapla.Click += bKosesizHesapla_Click;
+            // 
+            // tbYaricap
+            // 
+            tbYaricap.Location = new Point(85, 25);
+            tbYaricap.Name = "tbYaricap";
+            tbYaricap.Size = new Size(100, 23);
+            tbYaricap.TabIndex = 1;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 28);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 15);
+            label3.TabIndex = 0;
+            label3.Text = "Yarı Çap";
             // 
             // lSonuc
             // 
-            this.lSonuc.AutoSize = true;
-            this.lSonuc.Location = new System.Drawing.Point(12, 155);
-            this.lSonuc.Name = "lSonuc";
-            this.lSonuc.Size = new System.Drawing.Size(43, 15);
-            this.lSonuc.TabIndex = 3;
-            this.lSonuc.Text = "lSonuc";
+            lSonuc.AutoSize = true;
+            lSonuc.Location = new Point(12, 155);
+            lSonuc.Name = "lSonuc";
+            lSonuc.Size = new Size(43, 15);
+            lSonuc.TabIndex = 3;
+            lSonuc.Text = "lSonuc";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(420, 215);
-            this.Controls.Add(this.lSonuc);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(420, 215);
+            Controls.Add(lSonuc);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Name = "Form1";
+            Text = "Form1";
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -175,7 +174,7 @@
         private TextBox tbTaban;
         private GroupBox groupBox2;
         private Button bKosesizHesapla;
-        private TextBox textBox2;
+        private TextBox tbYaricap;
         private Label label3;
         private Label lSonuc;
     }
