@@ -31,11 +31,13 @@
             label1 = new Label();
             label2 = new Label();
             groupBox1 = new GroupBox();
+            ddlSekil = new ComboBox();
             btnKoseliHesapla = new Button();
             tbYukseklik = new TextBox();
             tbTaban = new TextBox();
             groupBox2 = new GroupBox();
-            bKosesizHesapla = new Button();
+            cbPi = new CheckBox();
+            btnKosesizHesapla = new Button();
             tbYaricap = new TextBox();
             label3 = new Label();
             lSonuc = new Label();
@@ -64,6 +66,7 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(ddlSekil);
             groupBox1.Controls.Add(btnKoseliHesapla);
             groupBox1.Controls.Add(tbYukseklik);
             groupBox1.Controls.Add(tbTaban);
@@ -76,6 +79,14 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Köşeli";
             // 
+            // ddlSekil
+            // 
+            ddlSekil.FormattingEnabled = true;
+            ddlSekil.Location = new Point(22, 109);
+            ddlSekil.Name = "ddlSekil";
+            ddlSekil.Size = new Size(81, 23);
+            ddlSekil.TabIndex = 4;
+            // 
             // btnKoseliHesapla
             // 
             btnKoseliHesapla.Location = new Point(109, 109);
@@ -84,6 +95,7 @@
             btnKoseliHesapla.TabIndex = 3;
             btnKoseliHesapla.Text = "Hesapla";
             btnKoseliHesapla.UseVisualStyleBackColor = true;
+            btnKoseliHesapla.Click += btnKoseliHesapla_Click;
             // 
             // tbYukseklik
             // 
@@ -101,7 +113,8 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(bKosesizHesapla);
+            groupBox2.Controls.Add(cbPi);
+            groupBox2.Controls.Add(btnKosesizHesapla);
             groupBox2.Controls.Add(tbYaricap);
             groupBox2.Controls.Add(label3);
             groupBox2.Location = new Point(214, 12);
@@ -111,15 +124,25 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Köşesiz";
             // 
-            // bKosesizHesapla
+            // cbPi
             // 
-            bKosesizHesapla.Location = new Point(110, 109);
-            bKosesizHesapla.Name = "bKosesizHesapla";
-            bKosesizHesapla.Size = new Size(75, 23);
-            bKosesizHesapla.TabIndex = 3;
-            bKosesizHesapla.Text = "Hesapla";
-            bKosesizHesapla.UseVisualStyleBackColor = true;
-            bKosesizHesapla.Click += bKosesizHesapla_Click;
+            cbPi.AutoSize = true;
+            cbPi.Location = new Point(85, 57);
+            cbPi.Name = "cbPi";
+            cbPi.Size = new Size(66, 19);
+            cbPi.TabIndex = 4;
+            cbPi.Text = "Pi Uzun";
+            cbPi.UseVisualStyleBackColor = true;
+            // 
+            // btnKosesizHesapla
+            // 
+            btnKosesizHesapla.Location = new Point(110, 109);
+            btnKosesizHesapla.Name = "btnKosesizHesapla";
+            btnKosesizHesapla.Size = new Size(75, 23);
+            btnKosesizHesapla.TabIndex = 3;
+            btnKosesizHesapla.Text = "Hesapla";
+            btnKosesizHesapla.UseVisualStyleBackColor = true;
+            btnKosesizHesapla.Click += btnKosesizHesapla_Click;
             // 
             // tbYaricap
             // 
@@ -156,6 +179,7 @@
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -173,9 +197,11 @@
         private TextBox tbYukseklik;
         private TextBox tbTaban;
         private GroupBox groupBox2;
-        private Button bKosesizHesapla;
+        private Button btnKosesizHesapla;
         private TextBox tbYaricap;
         private Label label3;
         private Label lSonuc;
+        private CheckBox cbPi;
+        private ComboBox ddlSekil;
     }
 }
